@@ -20,5 +20,11 @@ from core import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name="home")
+    path('', views.home, name="home"),
+
+    #aboutus
+    path('aboutus/', views.aboutus, name="aboutus"),
+
+    #mental health library
+    path('mentalhealthlibrary/', views.mhl, name="mhl"),
 ]
