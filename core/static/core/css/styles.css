@@ -1,4 +1,40 @@
-h1{
-    color: red;
-    font-size: 40px;
-}
+
+.navbar-brand  {
+    font-family: Meddon, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+    
+    font-size: large;
+  }
+
+  .nav-link{
+    font-family: Palatino Linotype, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+      font-size: large;
+  }
+
+  .nav-item{
+    font-family: Palatino Linotype, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+    font-size: large;
+  }
+
+  /* Custom CSS to increase space between navbar links */
+/* Custom CSS to increase space between navbar links */
+.navbar-nav .nav-item .nav-link {
+    margin-right: 20px; /* Adjust the right margin as needed */
+  }
+  
+  /* Optional: Increase space between navbar links on smaller screens */
+  @media (max-width: 767px) {
+    .navbar-nav .nav-item .nav-link {
+      margin-right: 0; /* Reset margin for smaller screens if necessary */
+      margin-bottom: 10px; /* Adjust the bottom margin as needed */
+    }
+  }
+  

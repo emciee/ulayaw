@@ -23,16 +23,19 @@ def signupuser(request):
     if request.method == 'GET':   
         return render(request, 'core/signupuser.html',{'form':UserCreationForm()})
     else:
-        if request.POST['password1'] == request.POST['password2']:
-            try:
-                user = User.objects.create_user(request.POST['username'], password=request.POST['password1'])
-                user.save()
-                login(request,user)
-                return redirect('home')
-            except IntegrityError:
-                return render(request, 'core/signupuser.html',{'form':UserCreationForm(),'error':'That username has already been taken. Enter New Username'})
+        if len(request.POST['password1']) > 8:
+            if request.POST['password1'] == request.POST['password2']:
+                try:
+                    user = User.objects.create_user(request.POST['username'], password=request.POST['password1'])
+                    user.save()
+                    login(request,user)
+                    return redirect('home')
+                except IntegrityError:
+                    return render(request, 'core/signupuser.html',{'form':UserCreationForm(),'error':'That username has already been taken. Enter New Username'})
+            else:
+                return render(request, 'core/signupuser.html',{'form':UserCreationForm(),'error':'Passwords Did Not Match'})
         else:
-            return render(request, 'core/signupuser.html',{'form':UserCreationForm(),'error':'Passwords Did Not Match'})
+            return render(request, 'core/signupuser.html',{'form':UserCreationForm(),'error':'Passwords Must Be Greater than 8'})
         
 def loginuser(request):
     if request.method == 'GET':   
