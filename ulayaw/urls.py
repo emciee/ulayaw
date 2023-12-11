@@ -27,4 +27,9 @@ urlpatterns = [
 
     #mental health library
     path('mentalhealthlibrary/', views.mhl, name="mhl"),
+
+    #authentication
+    path('signup/', views.signupuser, name="signupuser"),
+    path('logout/', views.logoutuser, name="logoutuser"),
+    path('login/', views.loginuser, name="loginuser")
 ]

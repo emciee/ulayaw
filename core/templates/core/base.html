@@ -25,6 +25,15 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                 </li>
+
+                {% if user.is_authenticated %}
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="">Logged in as {{ user.username }}</a>
+                </li>
+                {% endif %}
+
+
             </ul>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
@@ -33,6 +42,27 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'aboutus' %}">About Us</a>
                 </li>
+
+
+                {% if user.is_authenticated %}
+
+                <form method="POST" action= {% url 'logoutuser' %}>
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <button type="submit">Logout</button>
+                </form>
+
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'loginuser' %}">Login</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'signupuser' %}">Sign Up</a>
+                </li>
+                {% endif %}
+ 
+
             </ul>
         </div>
     </div>
