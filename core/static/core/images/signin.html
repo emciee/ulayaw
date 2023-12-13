@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage: Sign in and Registration</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+    <header>
+        <h2 class="logo">Ulayaw</h2>
+        <nav class="navigation">
+            <a href="#">About Us</a>
+            <a href="#">Chatbot</a>
+            <a href="#">Lounge</a>
+            <a href="#">Seek Help</a>
+            <a href="#">Contact Us</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+
+        <!-- login -->
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label id="emailadd">Email Address</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div> 
+
+        <!-- register -->
+        <div class="form-box register">
+            <h2>Create an account</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label id="emailadd">Email Address</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn">Create Account</button>
+
+                <div class="login-register">
+                    <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    <!--  -->
+    </div> 
+</div>
+
+    <!-- content -->
+    <div class="container">
+        <h1>Where Support Meets Understanding</h1>
+    </div>
+
+    <div class="blank">
+        <p class="quote">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+                <!-- <a href="#">Share your thoughts</a> -->
+    </div> 
+
+    <div class="container second">
+        <div class="card">
+            <div class="info">
+                <img src="assets/img2.jpg">
+                <h3>Lounge</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde ratione fugiat.</p>
+            </div>
+            <a href="#">Visit Lounge</a>
+        </div>
+        <div class="card">
+            <div class="info">
+                <img src="assets/29.png">
+                <h3>Ulayaw Chatbot</h3>
+                <p>Labas mo sakit ng nakem mo dito.</p>
+            </div>
+            <a href="#">Open Chatbot</a>
+        </div>
+        <div class="card">
+            <div class="info">
+                <img src="assets/img3.jpg">
+                <h3>Mental Health Hotlines</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde ratione fugiat.</p>
+            </div>
+            <a href="#">Seek Help</a>
+        </div>
+    </div>
+
+    <div class="blank-2">
+        <div class="footer">
+            <div class="column">
+                <p>Logo</p>
+                <!-- ung logo dito -->
+                <img src="" alt="logo"> 
+                <ul> 
+                    <!-- icons -->
+                    <li><a href="www.facebook.com"><img src="" alt="fb"></a></li>
+                    <li><a href="www.instagram.com"><img src="" alt="insta"></a></li>
+                    <li><a href="www.gmail.com"><img src="" alt="gmail"></a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">The Team</a></li>
+                    <li><a href="#">Our Goals</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Mental Health Illnesses</h3>
+                <ul>
+                    <li><a href="#">Anxiety</a></li>
+                    <li><a href="#">ADHD</a></li>
+                    <li><a href="#">Bipolar</a></li>
+                    <li><a href="#">Depression</a></li>
+                    <li><a href="#">Mood Disorders</a></li>
+                    <li><a href="#">Obsessive Compulsive Disorder</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Helpful Links</h3>
+                <ul>
+                    <li><a href="#">Mental Health Hotlines PH</a></li>
+                    <li><a href="#">Recovery Lounge</a></li>
+                    <li><a href="#">Ulayaw Chatbot</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+        <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script></script>
+    
+</body>
+</html>
