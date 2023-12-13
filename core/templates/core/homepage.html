@@ -4,8 +4,10 @@
 {% load static %}
 
 <!-- content -->
+<div class="imagebg">
 <div class="container">
     <h1>Where Support Meets Understanding</h1>
+</div>
 </div>
 
 <div class="blank">
@@ -13,31 +15,43 @@
             <!-- <a href="#">Share your thoughts</a> -->
 </div> 
 
-<div class="container second">
-    <div class="card">
-        <div class="info">
-            <img src="{% static "core/images/img2.jpg" %}">
-            <h3>Lounge</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde ratione fugiat.</p>
+<div class="imagebg">
+
+    <div class="container second">
+        <div class="card col-lg-4 col-md-6 col-sm-12">
+            <div class="info">
+                <img src="{% static "core/images/img2.jpg" %}">
+                <h3>Lounge</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde ratione fugiat.</p>
+            </div>
+        {% if user.is_authenticated %}
+            <a href="{% url 'lounge' %}">Visit Lounge</a>
+        {% else %}
+            <a href="{% url 'loginuser' %}">Visit Lounge</a>
+        {% endif %}
         </div>
-        <a href="#">Visit Lounge</a>
-    </div>
-    <div class="card">
-        <div class="info">
-            <img src="{% static "core/images/29.png" %}">
-            <h3>Ulayaw Chatbot</h3>
-            <p>Labas mo sakit ng nakem mo dito.</p>
+
+
+        <div class="card col-lg-4 col-md-6 col-sm-12">
+            <div class="info">
+                <img src="{% static "core/images/29.png" %}">
+                <h3>Ulayaw Chatbot</h3>
+                <p>Labas mo sakit ng nakem mo dito.</p>
+            </div>
+            <a href="#">Open Chatbot</a>
         </div>
-        <a href="#">Open Chatbot</a>
-    </div>
-    <div class="card">
-        <div class="info">
-            <img src="{% static "core/images/img3.jpg" %}">
-            <h3>Mental Health Hotlines</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde ratione fugiat.</p>
+
+        <div class="card col-lg-4 col-md-6 col-sm-12">
+            <div class="info">
+                <img src="{% static "core/images/img3.jpg" %}">
+                <h3>Mental Health Hotlines</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde ratione fugiat.</p>
+            </div>
+            <a href="#">Seek Help</a>
         </div>
-        <a href="#">Seek Help</a>
+        
     </div>
+
 </div>
 
 <div class="blank-2">

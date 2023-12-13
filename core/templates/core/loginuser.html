@@ -2,13 +2,13 @@
 
 
 {% block content %}
-
+<div class="imagebg">
 <!-- login -->
 <div style="display: flex; justify-content: center; align-items: center; min-height: 100vh;">
     <div class="card-login" style="align-items:center">
         <div class="form-box login">
             <h2>Login</h2>
-            {{ error }}
+            <h6 style="color:red;" >{{ error }}<h6>
             <form method="POST">
                 {% csrf_token %}
                 <div class="input-box">
@@ -32,6 +32,6 @@
         </div> 
     </div>
 </div>
-
+</div>
 
 {% endblock %}
