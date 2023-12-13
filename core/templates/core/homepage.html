@@ -5,9 +5,9 @@
 
 <!-- content -->
 <div class="imagebg">
-<div class="container">
-    <h1>Where Support Meets Understanding</h1>
-</div>
+    <div class="container">
+        <h2 class="slogan" >ULAYAW</h2><h2>"Where Support Meets Understanding"</h2>
+    </div>
 </div>
 
 <div class="blank">
@@ -24,34 +24,36 @@
                 <h3>Lounge</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde ratione fugiat.</p>
             </div>
-        {% if user.is_authenticated %}
-            <a href="{% url 'lounge' %}">Visit Lounge</a>
-        {% else %}
-            <a href="{% url 'loginuser' %}">Visit Lounge</a>
-        {% endif %}
+            {% if user.is_authenticated %}
+            <a href="{% url 'lounge' %}" class="btn btn-primary">Visit Lounge</a>
+            {% else %}
+            <a href="{% url 'loginuser' %}" class="btn btn-primary">Visit Lounge</a>
+            {% endif %}
         </div>
-
-
+    
         <div class="card col-lg-4 col-md-6 col-sm-12">
             <div class="info">
                 <img src="{% static "core/images/29.png" %}">
                 <h3>Ulayaw Chatbot</h3>
                 <p>Labas mo sakit ng nakem mo dito.</p>
             </div>
-            <a href="#">Open Chatbot</a>
+            {% if user.is_authenticated %}
+            <a href="{% url 'lounge' %}" class="btn btn-primary">Open Chatbot</a>
+            {% else %}
+            <a href="{% url 'loginuser' %}" class="btn btn-primary">Open Chatbot</a>
+            {% endif %}
         </div>
-
+    
         <div class="card col-lg-4 col-md-6 col-sm-12">
             <div class="info">
                 <img src="{% static "core/images/img3.jpg" %}">
-                <h3>Mental Health Hotlines</h3>
+                <h3>Mental Health Library</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde ratione fugiat.</p>
             </div>
-            <a href="#">Seek Help</a>
+            <a href="{% url 'mhl' %}" class="btn btn-primary">Search Library</a>
         </div>
-        
     </div>
-
+    
 </div>
 
 <div class="blank-2">
@@ -75,7 +77,7 @@
             </ul>
         </div>
         <div class="column">
-            <h3>Mental Health Illnesses</h3>
+            <h3>Mental Health Library</h3>
             <ul>
                 <li><a href="#">Anxiety</a></li>
                 <li><a href="#">ADHD</a></li>

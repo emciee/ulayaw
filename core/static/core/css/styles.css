@@ -9,6 +9,22 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.slogan{
+    font-family: BlinkMacSystemFont, Meddon, -apple-system,  "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+    color: white;
+    font-size: 70px;
+}
+
+h2{
+    font-family: BlinkMacSystemFont, Meddon, -apple-system,  "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+    color:black;
+}
 /* body {
     display: flex;
     justify-content: center;
@@ -232,7 +248,7 @@
   color: #323232;
   text-align: center;
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -295,7 +311,7 @@ p{
 
 .blank{
     width: 100%;
-    min-height: 60vh;
+    min-height: 40vh;
     background-color: #323232;
 
 }
@@ -311,7 +327,7 @@ p{
 .second{
     background-image: url(../images/bg-2.png);
     background-attachment: fixed;
-    height: 950px;
+    height: 700px;
     width: auto;
     flex-direction: row;
     gap: 2.5rem;
@@ -343,14 +359,14 @@ p{
     justify-content: space-between;
     border-radius: 0.7rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    transition: all 0.3s ease;
+    transition: al l 0.3s ease;
 }
 
 .card-signup{
   display: flex;
   flex-direction: column;
-  width: 400px;
-  height: 500px;
+  width: 380px;
+  height: 480px;
   background-color: #fff;
   align-items: center;
   justify-content: space-between;
@@ -358,14 +374,14 @@ p{
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
   transition: all 0.3s ease;
   padding-top:20px;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .card-login{
   display: flex;
   flex-direction: column;
-  width: 400px;
-  height: 450px;
+  width: 380px;
+  height: 430px;
   background-color: #fff;
   align-items: center;
   justify-content: space-between;
@@ -373,7 +389,7 @@ p{
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
   transition: all 0.3s ease;
   padding-top:20px;
-  margin-top:20px;
+  margin-top:40px;
 }
 .card:hover{
     transform: scale(1.1);
@@ -473,7 +489,8 @@ p{
 /* Add a custom class to the logout button */
 form .logout-button {
   background-color: transparent; /* White background */
-  padding: 10px 12px; /* 5px top and bottom, 10px left and right padding */
+  padding: 10px 16px 10px 12px;
+  margin-left: 15px;
   border: none; /* No border */
   outline: none; /* No outline */
   cursor: pointer; /* Change cursor on hover */
