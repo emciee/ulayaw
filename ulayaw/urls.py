@@ -31,6 +31,7 @@ urlpatterns = [
 
     #mental health library
     path('mentalhealthlibrary/', views.mhl, name="mhl"),
+    path('chatbot/', views.chatbot, name="chatbot"),
 
     #authentication
     path('signup/', views.signupuser, name="signupuser"),

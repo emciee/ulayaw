@@ -1,9 +1,43 @@
-{% extends 'core/base.html' %}
+{% extends 'core/base2.html' %}
 
 {% block content %}
-
+{% load static %}
 <div class="imagebg">
-    <h1>This is the Mental Health Library page</h1>
+
+
+<h2 style="margin-top:100px"> Mental Health Library</h2>
+
+    <div class="container">
+
+        <h1 class="heading"></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="{% static "core/images/philmen.png" %}" alt="">
+                <h3>Philippine Mental Health Association Online Support</h3>
+                <p>The Philippine Mental Health Association, Inc. (PMHA) is a private, non-stock, non-profit organization that provides premier Mental Health Services </p>
+                <a href="" class="btn">Enter Library</a>
+            </div>
+            <div class="box">
+                <img src="{% static "core/images/upd.png" %}" alt="">
+                <h3>UPD PsychServ</h3>
+                <p>Offers free telepsychotherapy services to frontliners, PUMs & PUIs, COVID-19 positive patients and relatives, and anyone affected by the pandemic through social media.</p>
+                <a href="" class="btn">Enter Library</a>
+            </div>
+            <div class="box">
+                <img src="{% static "core/images/nationalcenter.png" %}" alt="">
+                <h3>National Center for Mental Health</h3>
+                <p>The National Center for Mental Health is dedicated to delivering preventive, curative and rehabilitative mental health care services.</p>
+                <a href="" class="btn">Enter Library</a>
+            </div>
+            <div class="box">
+                <img src="{% static "core/images/nationalcenter.png" %}" alt="">
+                <h3>National Center for Mental Health</h3>
+                <p>The National Center for Mental Health is dedicated to delivering preventive, curative and rehabilitative mental health care services.</p>
+                <a href="" class="btn">Enter Library</a>
+            </div>
+        </div>
+    </div>
 </div>
 
 {% endblock  %}
