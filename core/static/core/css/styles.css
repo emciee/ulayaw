@@ -69,7 +69,7 @@ h2{
 .navbar a {
     position: relative;
     font-size: 1.1em;
-    color: #fff;
+    color: black;
     text-decoration: none;
     font-weight: 500%;
     margin-left: 40px;
@@ -311,7 +311,7 @@ p{
 
 .blank{
     width: 100%;
-    min-height: 40vh;
+    min-height: 30vh;
     background-color: #323232;
 
 }
@@ -320,18 +320,18 @@ p{
     width: 100%;
     min-height: 60vh;
     background-color: #323232;
-    
+
 
 }
 
-.second{
+/* .second{
     background-image: url(../images/bg-2.png);
     background-attachment: fixed;
     height: 700px;
     width: auto;
     flex-direction: row;
     gap: 2.5rem;
-}
+} */
 
 
 
@@ -359,7 +359,8 @@ p{
     justify-content: space-between;
     border-radius: 0.7rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    transition: al l 0.3s ease;
+    transition: all 0.3s ease;
+    margin: 10px; 
 }
 
 .card-signup{
@@ -426,7 +427,7 @@ p{
 
 .card a{
     margin-bottom: 1.5rem;
-    width: 70%;
+    width: 60%;
 }
 
 .blank-2{
@@ -445,7 +446,7 @@ p{
     font-weight: 100;
     font-size: x-large;
     margin-left: 300px;
-    color: antiquewhite;
+    color:white;
 }
 
 .footer{
@@ -494,7 +495,7 @@ form .logout-button {
   border: none; /* No border */
   outline: none; /* No outline */
   cursor: pointer; /* Change cursor on hover */
-  color: white; /* Text color */
+  color: black; /* Text color */
   font-size: 1rem;
 }
 

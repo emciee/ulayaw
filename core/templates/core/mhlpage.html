@@ -4,14 +4,21 @@
 {% load static %}
 <div class="imagebg">
 
-
-<h2 style="margin-top:100px"> Mental Health Library</h2>
-
-    <div class="container">
-
-        <h1 class="heading"></h1>
-
-        <div class="box-container">
+<h1 style="margin-top:110px"> Mental Health Library</h1>
+<div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6 ">
+        <a href="#mentalillness" class="a-mhl" style="--clr:#1e9bff"><span>Mental Illnesses</span><i></i></a>
+      </div>
+      <div class="col-md-6">
+        <a href="#organizations" class="a-mhl" style="--clr:#ff1867"><span>Organizations</span><i></i></a>
+      </div>
+    </div>
+  </div>
+  
+    <div class="container" id="mentalillness">
+        <h2 style = "background:white;width:100%;color:black;border-radius:5px;" class="pt-3 pb-3">Mental Illnesses</h2>
+        <div class="box-container mt-5">
             <div class="box">
                 <img src="{% static "core/images/philmen.png" %}" alt="">
                 <h3>Philippine Mental Health Association Online Support</h3>
@@ -38,6 +45,38 @@
             </div>
         </div>
     </div>
+
+
+
+<div class="container" id="organizations">
+    <h2 style = "background:white;width:100%;color:black;border-radius:5px;" class="pt-3 pb-3">Organizations</h2>
+    <div class="box-container mt-5">
+        <div class="box">
+            <img src="{% static "core/images/philmen.png" %}" alt="">
+            <h3>Philippine Mental Health Association Online Support</h3>
+            <p>The Philippine Mental Health Association, Inc. (PMHA) is a private, non-stock, non-profit organization that provides premier Mental Health Services </p>
+            <a href="" class="btn">Enter Library</a>
+        </div>
+        <div class="box">
+            <img src="{% static "core/images/upd.png" %}" alt="">
+            <h3>UPD PsychServ</h3>
+            <p>Offers free telepsychotherapy services to frontliners, PUMs & PUIs, COVID-19 positive patients and relatives, and anyone affected by the pandemic through social media.</p>
+            <a href="" class="btn">Enter Library</a>
+        </div>
+        <div class="box">
+            <img src="{% static "core/images/nationalcenter.png" %}" alt="">
+            <h3>National Center for Mental Health</h3>
+            <p>The National Center for Mental Health is dedicated to delivering preventive, curative and rehabilitative mental health care services.</p>
+            <a href="" class="btn">Enter Library</a>
+        </div>
+        <div class="box">
+            <img src="{% static "core/images/nationalcenter.png" %}" alt="">
+            <h3>National Center for Mental Health</h3>
+            <p>The National Center for Mental Health is dedicated to delivering preventive, curative and rehabilitative mental health care services.</p>
+            <a href="" class="btn">Enter Library</a>
+        </div>
+    </div>
+</div>
 </div>
 
 {% endblock  %}

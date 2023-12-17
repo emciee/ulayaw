@@ -112,8 +112,7 @@ form .logout-button {
   }
 
 h2{
-    font-family: BlinkMacSystemFont, Meddon, -apple-system,  "Segoe UI", Roboto,
-    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    font-family: 'century gothic', Helvetica, Arial, "PingFang SC",
     "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
     "Source Han Sans CN", sans-serif;
     color:white;
@@ -220,4 +219,93 @@ h2{
     color: #fff;
     font-weight: 500;
     margin-top:10px;
+}
+
+button-mhl{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top:50px;
+  
+}
+
+.a-mhl{
+  position:relative;
+  background: #fff;
+  color:#fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing:0.1em;
+  font-weight: 400;
+  padding: 10px 30px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.a-mhl:hover{
+  letter-spacing:0.25em;
+  background: var(--clr);
+  box-shadow: 0 0 35px var(--clr);
+  color:var(--clr);
+}
+
+.a-mhl:before{
+  content:'';
+  position:absolute;
+  inset:2px;
+  background: #172A92;
+}
+
+.a-mhl span{
+  position: relative;
+  z-index: 1;
+}
+
+.a-mhl i{
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.a-mhl i::before{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 10px;
+  height: 4px;
+  background: #172A92;
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.5s;
+}
+
+a.a-mhl:hover i::before{
+  width:20px;
+  left: 20%;
+}
+
+.a-mhl i::after{
+  content:'';
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 10px;
+  height: 4px;
+  background: #172A92;
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.5s;
+}
+
+a.a-mhl:hover i::after{
+  width:20px;
+  left: 80%;
+}
+
+h1{
+  font-family: BlinkMacSystemFont, Meddon, -apple-system,  "Segoe UI", Roboto,
+  Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+  "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+  "Source Han Sans CN", sans-serif;
+  color:white;
 }
