@@ -18,6 +18,11 @@ def aboutus(request):
 def mhl(request):
     return render(request, "core/mhlpage.html")
 
+#details
+def anx_view(request):
+    return render(request, "core/anxiety.html")
+
+
 #Authentication
 def signupuser(request):
     if request.method == 'GET':   
