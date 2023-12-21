@@ -20,6 +20,8 @@ from core import views
 from django.conf import settings
 from django.conf.urls.static import static
 
+import core.migrations
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name="home"),
@@ -31,8 +33,9 @@ urlpatterns = [
 
     #mental health library
     path('mentalhealthlibrary/', views.mhl, name="mhl"),
-    path('anxiety/', views.anx_view, name='anx'),
+    path('anxiety/', views.anx_view, name="anx"),
     path('chatbot/', views.chatbot, name="chatbot"),
+    path('philmen/', core.migrations.phil, name="philmen"),
 
     #authentication
     path('signup/', views.signupuser, name="signupuser"),

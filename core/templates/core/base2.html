@@ -92,15 +92,55 @@
         </div>
     </div>
 </nav>
-
-
 <!--Navbar-->
+{% block content %}{% endblock content %}
+<!-- footer -->
+
+<div class="blank-2">
+    <div class="footer">
+        <div class="column">
+            <p>Logo</p>
+            <!-- ung logo dito -->
+            <img src="" alt="logo"> 
+            <ul> 
+                <!-- icons -->
+                <li><a href="www.facebook.com"><img src="" alt="fb"></a></li>
+                <li><a href="www.instagram.com"><img src="" alt="insta"></a></li>
+                <li><a href="www.gmail.com"><img src="" alt="gmail"></a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h3>About</h3>
+            <ul>
+                <li><a href="#">The Team</a></li>
+                <li><a href="#">Our Goals</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h3>Mental Health Library</h3>
+            <ul>
+                <li><a href="#">Anxiety</a></li>
+                <li><a href="#">ADHD</a></li>
+                <li><a href="#">Bipolar</a></li>
+                <li><a href="#">Depression</a></li>
+                <li><a href="#">Mood Disorders</a></li>
+                <li><a href="#">Obsessive Compulsive Disorder</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h3>Helpful Links</h3>
+            <ul>
+                <li><a href="#">Mental Health Hotlines PH</a></li>
+                <li><a href="#">Recovery Lounge</a></li>
+                <li><a href="#">Ulayaw Chatbot</a></li>
+            </ul>
+        </div>
 
 
-  {% block content %}{% endblock content %}
+ 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script></script>
     
   <script src="{% static 'core/js/index2.js' %}"></script>
 </body>

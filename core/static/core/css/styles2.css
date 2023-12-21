@@ -4,32 +4,40 @@
     position: fixed !important;
     display: flex;
     justify-content: center;
-    /* background: url('../images/bg.png') no-repeat; */
     background-size: cover;
     background-position: center; 
     font-family: 'Poppins', 'century gothic';
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    align-content: center;
+    z-index: 99;
+    background-color: palegoldenrod;
 }
 
 .navbar a{
-  color: white;
+  color: black;
+  transition: color 0.4s ease-in-out;
 }
 
 .navbar a:hover {
   color: #fff;
 }
 
-.navbar {
+/* .navbar {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    /* background: transparent; */
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-content: center;
     z-index: 99;
-}
+    background-color: palegoldenrod;
+} */
 
 .logo {
     font-size: 2em;
@@ -156,7 +164,6 @@ h2{
   .container .box-container{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
-
     gap:20px;
     
   }
@@ -319,6 +326,8 @@ h1{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:white;
 }
 
+/* info page */
+
 .illnesses {
   /* background-color: rgb(255, 255, 255); */
   background-size: cover;
@@ -379,3 +388,4 @@ a.info:hover {
   width: 100%;
   margin-left: 8px;
 }
+

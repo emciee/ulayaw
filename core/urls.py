@@ -4,6 +4,5 @@ from core import urls, views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.anx_view, name='anx'),
 
 ]
